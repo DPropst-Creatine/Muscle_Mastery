@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - Muscle Mastery</title>
+    <meta name="description" content="Download additional resources and tools for the Muscle Mastery course">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-900 transition-colors duration-300">
+    <!-- Header -->
+    <header class="bg-navy text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center max-w-4xl">
+            <a href="index.html" class="text-xl font-bold font-montserrat hover:text-gold transition-colors">Muscle Mastery</a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="index.html#overview" class="hover:text-gold transition-colors">Overview</a>
+                <a href="teaser.html" class="hover:text-gold transition-colors">Free Preview</a>
+                <a href="resources.html" class="hover:text-gold transition-colors text-gold">Resources</a>
+                <a href="contact.html" class="hover:text-gold transition-colors">Contact</a>
+            </nav>
+            <button id="darkModeToggle" class="p-2 rounded-lg hover:bg-navy-dark transition-colors" aria-label="Toggle dark mode">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-8">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h1 class="text-3xl md:text-4xl font-bold font-montserrat text-navy mb-4">Course Resources</h1>
+                <p class="text-lg text-gray-700">Download additional tools and guides to support your muscle mastery journey</p>
+            </div>
+
+            <!-- Resource Cards -->
+            <div class="grid md:grid-cols-2 gap-8 mb-8">
+                <!-- Creatine Quick Start Guide -->
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gold bg-opacity-10 p-3 rounded-lg mr-4">
+                            <svg class="w-8 h-8 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm2 6a2 2 0 114 0 2 2 0 01-4 0zm8 0a2 2 0 114 0 2 2 0 01-4 0z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold font-montserrat text-navy">Creatine Quick Start Guide</h3>
+                            <p class="text-gray-600">Essential reference for creatine supplementation</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        A comprehensive quick-reference guide covering creatine dosing, timing, selection criteria, and safety considerations specifically for adults over 40.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-sm text-gray-600">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zM7 8a1 1 0 000 2h6a1 1 0 100-2H7zm0 4a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>PDF Format • 4 Pages</span>
+                        </div>
+                        <button class="w-full bg-gold text-navy px-6 py-3 rounded-lg font-semibold hover:bg-gold-dark transition-colors">
+                            Download PDF
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Protein Calculator -->
+                <div class="bg-white rounded-lg shadow-md p-8">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-gold bg-opacity-10 p-3 rounded-lg mr-4">
+                            <svg class="w-8 h-8 text-gold" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold font-montserrat text-navy">Protein Calculator</h3>
+                            <p class="text-gray-600">Personalized protein intake calculator</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">
+                        Calculate your optimal daily protein intake based on your weight, activity level, and goals. Includes meal planning templates and timing strategies.
+                    </p>
+                    <div class="space-y-3">
+                        <div class="flex items-center text-sm text-gray-600">
+                            <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M6 2a2 2 0 00-2 2v12a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2H6zm1 2a1 1 0 000 2h6a1 1 0 100-2H7zM7 8a1 1 0 000 2h6a1 1 0 100-2H7zm0 4a1 1 0 100 2h6a1 1 0 100-2H7z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span>PDF Format • 3 Pages</span>
+                        </div>
+                        <button class="w-full bg-gold text-navy px-6 py-3 rounded-lg font-semibold hover:bg-gold-dark transition-colors">
+                            Download PDF
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bonus Resources -->
+            <div class="bg-white rounded-lg shadow-md p-8 mb-8">
+                <h3 class="text-2xl font-bold font-montserrat text-navy mb-6">Bonus Resources</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="border-l-4 border-gold pl-6">
+                        <h4 class="font-semibold text-navy mb-2">Power Training Workout Templates</h4>
+                        <p class="text-gray-700 text-sm">Ready-to-use workout templates for beginners to advanced practitioners</p>
+                    </div>
+                    <div class="border-l-4 border-gold pl-6">
+                        <h4 class="font-semibold text-navy mb-2">Progress Tracking Sheets</h4>
+                        <p class="text-gray-700 text-sm">Track your strength, power, and biomarker improvements over time</p>
+                    </div>
+                    <div class="border-l-4 border-gold pl-6">
+                        <h4 class="font-semibold text-navy mb-2">Supplement Shopping Guide</h4>
+                        <p class="text-gray-700 text-sm">Brand recommendations and quality certifications to look for</p>
+                    </div>
+                    <div class="border-l-4 border-gold pl-6">
+                        <h4 class="font-semibold text-navy mb-2">Meal Planning Templates</h4>
+                        <p class="text-gray-700 text-sm">Weekly meal planning templates optimized for muscle protein synthesis</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Access Notice -->
+            <div class="bg-navy text-white rounded-lg p-8 text-center">
+                <h3 class="text-xl font-bold font-montserrat mb-4 text-gold">Need Course Access?</h3>
+                <p class="text-gray-200 mb-6">
+                    These resources are available to course participants. If you haven't enrolled yet, get started with the complete Muscle Mastery course.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button id="accessCourseBtn" class="bg-gold text-navy px-8 py-4 rounded-lg font-semibold hover:bg-gold-dark transition-colors">
+                        Access Course
+                    </button>
+                    <a href="teaser.html" class="border-2 border-gold text-gold px-8 py-4 rounded-lg font-semibold hover:bg-gold hover:text-navy transition-colors">
+                        Free Preview
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Passcode Modal -->
+    <div id="passcodeModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
+        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+            <h3 class="text-2xl font-bold font-montserrat text-navy mb-4">Enter Course Passcode</h3>
+            <p class="text-gray-700 mb-6">Please enter your passcode to access the full course content.</p>
+            <div class="mb-6">
+                <label for="passcodeInput" class="block text-sm font-medium text-gray-700 mb-2">Passcode</label>
+                <input type="password" id="passcodeInput" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold">
+                <div id="passcodeError" class="text-red-600 text-sm mt-2 hidden">Incorrect passcode. Please try again.</div>
+            </div>
+            <div class="flex gap-4">
+                <button id="submitPasscode" class="bg-gold text-navy px-6 py-3 rounded-lg font-semibold hover:bg-gold-dark transition-colors flex-1">
+                    Submit
+                </button>
+                <button id="cancelPasscode" class="bg-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-400 transition-colors">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-8">
+        <div class="container mx-auto px-4 text-center max-w-4xl">
+            <p class="text-gray-300">&copy; 2025 Muscle Mastery. All rights reserved.</p>
+            <p class="text-gray-300 mt-2">Contact: <a href="mailto:david@propstmetabolichealth.com" class="text-gold hover:text-gold-dark">david@propstmetabolichealth.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

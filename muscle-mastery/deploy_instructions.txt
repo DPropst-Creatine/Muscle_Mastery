@@ -1,0 +1,221 @@
+
+# Muscle Mastery Microsite Deployment Instructions
+
+## Quick Deployment to GitHub Pages
+
+### Prerequisites
+- GitHub account
+- Git installed (for command line method)
+- All files from muscle-mastery folder
+
+### Method 1: GitHub Web Interface (Recommended for beginners)
+
+1. **Create New Repository**
+   - Go to github.com and sign in
+   - Click "+" in top right corner → "New repository"
+   - Repository name: `DPropst-Creatine`
+   - Set to Public
+   - Do NOT initialize with README
+   - Click "Create repository"
+
+2. **Upload Files**
+   - Click "uploading an existing file" link
+   - Drag and drop ALL files from muscle-mastery folder
+   - Important: Include the .nojekyll file
+   - Commit message: "Initial commit - Muscle Mastery microsite"
+   - Click "Commit changes"
+
+3. **Enable GitHub Pages**
+   - Go to Settings tab in your repository
+   - Scroll down to "Pages" section
+   - Source: "Deploy from a branch"
+   - Branch: "main" (or "master")
+   - Folder: "/ (root)"
+   - Click "Save"
+
+4. **Access Your Site**
+   - Site URL: https://YOUR-USERNAME.github.io/DPropst-Creatine
+   - Wait 5-10 minutes for initial deployment
+   - Test with passcode: ENTER42
+
+### Method 2: Command Line (Git)
+
+```bash
+# Navigate to muscle-mastery directory
+cd muscle-mastery
+
+# Initialize git repository
+git init
+
+# Add all files
+git add .
+
+# Commit files
+git commit -m "Initial commit - Muscle Mastery microsite"
+
+# Add remote origin (replace YOUR-USERNAME)
+git remote add origin https://github.com/YOUR-USERNAME/DPropst-Creatine.git
+
+# Create and push to main branch
+git branch -M main
+git push -u origin main
+```
+
+After pushing, follow steps 3-4 from Method 1 to enable GitHub Pages.
+
+## Alternative Deployment Options
+
+### Netlify
+1. Drag muscle-mastery folder to netlify.com/drop
+2. Site will be live instantly with generated URL
+3. Can configure custom domain in settings
+
+### Vercel
+1. Import repository from GitHub at vercel.com
+2. Deploy with one click
+3. Automatic HTTPS and global CDN
+
+### GitHub Codespaces (for testing)
+```bash
+# Start local server for testing
+cd muscle-mastery
+python -m http.server 8000
+# or
+npx serve .
+```
+
+## File Checklist
+
+Ensure these files are included:
+- [ ] index.html
+- [ ] teaser.html
+- [ ] resources.html
+- [ ] contact.html
+- [ ] lessons/lesson-1.html
+- [ ] lessons/lesson-2.html
+- [ ] lessons/lesson-3.html
+- [ ] lessons/lesson-4.html
+- [ ] lessons/lesson-5.html
+- [ ] styles.css
+- [ ] script.js
+- [ ] README.md
+- [ ] .nojekyll (CRITICAL for GitHub Pages)
+- [ ] .gitignore
+
+## Post-Deployment Verification
+
+1. **Test Homepage**
+   - Visit your site URL
+   - Check responsive design on mobile
+   - Verify all links work
+
+2. **Test Passcode System**
+   - Click "Begin Course"
+   - Enter passcode: ENTER42
+   - Verify access to lesson pages
+
+3. **Test Dark Mode**
+   - Click dark mode toggle in header
+   - Verify theme persistence on page reload
+
+4. **Test Accessibility**
+   - Navigate using keyboard only
+   - Check color contrast
+   - Test with screen reader if available
+
+## Troubleshooting
+
+**Site showing 404 error?**
+- Ensure .nojekyll file is present
+- Check GitHub Pages settings are correct
+- Verify repository is public
+
+**Styles not loading?**
+- Check file paths in HTML
+- Ensure styles.css is in root directory
+- Clear browser cache
+
+**JavaScript errors?**
+- Check browser console for errors
+- Verify script.js is loading
+- Ensure all IDs referenced in JS exist in HTML
+
+**Mobile layout issues?**
+- Test on actual mobile device
+- Check viewport meta tag
+- Verify Tailwind CSS is loading
+
+## Performance Optimization
+
+### Before deploying:
+1. **Optimize Images**
+   - Compress images to <200KB
+   - Use appropriate formats (WebP for photos, SVG for icons)
+   - Include descriptive alt text
+
+2. **Test Performance**
+   - Run Lighthouse audit
+   - Check Core Web Vitals
+   - Test on slow connections
+
+3. **Validate Code**
+   - HTML validation: validator.w3.org
+   - CSS validation: jigsaw.w3.org/css-validator
+   - JavaScript: Check console for errors
+
+## SEO Considerations
+
+1. **Meta Tags**
+   - Title tags under 60 characters
+   - Meta descriptions under 160 characters
+   - Open Graph tags for social sharing
+
+2. **Content Structure**
+   - Use semantic HTML
+   - Proper heading hierarchy (h1, h2, h3)
+   - Descriptive link text
+
+3. **Technical SEO**
+   - Fast loading times
+   - Mobile-friendly design
+   - HTTPS enabled (automatic with GitHub Pages)
+
+## Maintenance
+
+### Regular Updates:
+- Update course content as needed
+- Check for broken links monthly
+- Monitor site performance
+- Update citations and references
+
+### Security:
+- Regularly update any dependencies
+- Monitor for security vulnerabilities
+- Consider implementing CSP headers
+
+## Custom Domain (Optional)
+
+To use a custom domain:
+1. Purchase domain from registrar
+2. Add CNAME file to repository root with your domain
+3. Configure DNS settings with registrar
+4. Enable custom domain in GitHub Pages settings
+
+## Support
+
+For deployment issues:
+- GitHub Pages Documentation: docs.github.com/pages
+- Contact: david@propstmetabolichealth.com
+- Check GitHub Status: githubstatus.com
+
+## Success Metrics
+
+Track these metrics post-deployment:
+- Page load times
+- Bounce rate
+- Course completion rate
+- Passcode entry success rate
+- Mobile vs desktop usage
+- Dark mode adoption rate
+
+Your site should be live within 10 minutes of deployment!

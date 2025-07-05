@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muscle Mastery: Creatine, Protein, and Power After 40</title>
+    <meta name="description" content="Evidence-based mini-course on muscle preservation and power training for adults over 40">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 text-gray-900 transition-colors duration-300">
+    <!-- Header -->
+    <header class="bg-navy text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center max-w-4xl">
+            <h1 class="text-xl font-bold font-montserrat">Muscle Mastery</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#overview" class="hover:text-gold transition-colors">Overview</a>
+                <a href="teaser.html" class="hover:text-gold transition-colors">Free Preview</a>
+                <a href="resources.html" class="hover:text-gold transition-colors">Resources</a>
+                <a href="contact.html" class="hover:text-gold transition-colors">Contact</a>
+            </nav>
+            <button id="darkModeToggle" class="p-2 rounded-lg hover:bg-navy-dark transition-colors" aria-label="Toggle dark mode">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-navy to-navy-dark text-white py-16">
+        <div class="container mx-auto px-4 text-center max-w-4xl">
+            <h1 class="text-4xl md:text-5xl font-bold font-montserrat mb-6 leading-tight">
+                Muscle Mastery: Creatine, Protein, and Power After 40
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200 max-w-3xl mx-auto">
+                Evidence-based strategies to preserve muscle, enhance power, and maintain independence as you age
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button id="beginCourseBtn" class="bg-gold text-navy px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gold-dark transition-colors">
+                    Begin Course
+                </button>
+                <a href="teaser.html" class="border-2 border-gold text-gold px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gold hover:text-navy transition-colors">
+                    Free Preview
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Overview -->
+    <section id="overview" class="py-16">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold font-montserrat mb-6 text-navy">Course Overview</h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+                    A comprehensive 5-lesson mini-course designed specifically for adults over 40 who want to combat age-related muscle loss and maintain strength and independence.
+                </p>
+            </div>
+
+            <!-- Lesson Cards -->
+            <div class="grid gap-6 md:gap-8">
+                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-gold">
+                    <h3 class="text-xl font-bold font-montserrat text-navy mb-3">Lesson 1: Creatine Science and Safety Fundamentals</h3>
+                    <p class="text-gray-700">Master the evidence-based foundation of creatine supplementation including safety profiles, optimal dosing, and quality selection for adults over 40.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-gold">
+                    <h3 class="text-xl font-bold font-montserrat text-navy mb-3">Lesson 2: Protein Requirements and Timing Strategies</h3>
+                    <p class="text-gray-700">Implement evidence-based protein intake protocols that support muscle protein synthesis and combat age-related anabolic resistance.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-gold">
+                    <h3 class="text-xl font-bold font-montserrat text-navy mb-3">Lesson 3: Power Training Over Strength Training</h3>
+                    <p class="text-gray-700">Design and implement power-focused resistance training programs that maximize functional capacity and reduce fall risk.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-gold">
+                    <h3 class="text-xl font-bold font-montserrat text-navy mb-3">Lesson 4: Supplement Protocols and Meal Planning</h3>
+                    <p class="text-gray-700">Create personalized supplementation schedules and meal planning strategies that optimize muscle protein synthesis and energy metabolism.</p>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6 border-l-4 border-gold">
+                    <h3 class="text-xl font-bold font-montserrat text-navy mb-3">Lesson 5: Long Term Success and Troubleshooting</h3>
+                    <p class="text-gray-700">Develop sustainable habits and problem-solving strategies for maintaining muscle health gains while addressing common obstacles.</p>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="text-center mt-12">
+                <div class="bg-gradient-to-r from-navy to-navy-dark text-white p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold font-montserrat mb-4">Ready to Start Your Muscle Mastery Journey?</h3>
+                    <p class="text-lg mb-6 text-gray-200">Get instant access to all 5 lessons and transform your approach to fitness after 40.</p>
+                    <button id="beginCourseBtn2" class="bg-gold text-navy px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gold-dark transition-colors">
+                        Begin Course Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Passcode Modal -->
+    <div id="passcodeModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50 flex items-center justify-center">
+        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+            <h3 class="text-2xl font-bold font-montserrat text-navy mb-4">Enter Course Passcode</h3>
+            <p class="text-gray-700 mb-6">Please enter your passcode to access the full course content.</p>
+            <div class="mb-6">
+                <label for="passcodeInput" class="block text-sm font-medium text-gray-700 mb-2">Passcode</label>
+                <input type="password" id="passcodeInput" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gold focus:border-gold">
+                <div id="passcodeError" class="text-red-600 text-sm mt-2 hidden">Incorrect passcode. Please try again.</div>
+            </div>
+            <div class="flex gap-4">
+                <button id="submitPasscode" class="bg-gold text-navy px-6 py-3 rounded-lg font-semibold hover:bg-gold-dark transition-colors flex-1">
+                    Submit
+                </button>
+                <button id="cancelPasscode" class="bg-gray-300 text-gray-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-400 transition-colors">
+                    Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-navy text-white py-8">
+        <div class="container mx-auto px-4 text-center max-w-4xl">
+            <p class="text-gray-300">&copy; 2025 Muscle Mastery. All rights reserved.</p>
+            <p class="text-gray-300 mt-2">Contact: <a href="mailto:david@propstmetabolichealth.com" class="text-gold hover:text-gold-dark">david@propstmetabolichealth.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+
+# Muscle Mastery - Git Ignore File
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build directories
+build/
+dist/
+
+# Temporary files
+tmp/
+temp/
+
+# Cache files
+.cache/
+*.cache
+
+# Backup files
+*.backup
+*.bak
+*.orig
+
+# Archive files (unless needed for resources)
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Don't ignore these specific files that might be needed
+!resources/*.pdf
+!assets/*.png
+!assets/*.jpg
+!assets/*.svg
+
+# Local development files
+.local
+.vscode-server
+
+# Testing files
+test-results/
+coverage/
+
+# Documentation builds
+docs/_build/
+
+# Python files (if any build scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Static file collections
+collected-static/
+static-files/
+
+# Don't ignore the .nojekyll file - it's needed for GitHub Pages
+!.nojekyll
+
+# Don't ignore README files
+!README.md
+!*.md
+
+# Keep deployment instructions
+!deploy_instructions.txt
+
+# Local configuration files
+config.local.json
+settings.local.json
+
+# Performance monitoring files
+*.perf
+*.trace
+
+# Browser testing files
+.selenium/
+webdriver/
+
+# Miscellaneous
+*.tmp
+*.temp
+*.old
